@@ -28,12 +28,12 @@ const useStyles = makeStyles((theme) =>
       gap: 12,
     },
     flag: {
-        borderRadius: '50%',
-        height: 18,
-        width: 18,
-        marginRight: 8,
-        verticalAlign: 'sub'
-      },
+      borderRadius: '50%',
+      height: 18,
+      width: 18,
+      marginRight: 8,
+      verticalAlign: 'sub'
+    },
   })
 );
 
