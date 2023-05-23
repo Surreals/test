@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 import useStyles from "./styles";
-import { currencies } from "../../utils/currencies";
+import { currencies, flagURLs } from "../../utils/currencies";
 import DesktopHeader from "./DesktopHeader";
 
 const pages = ["OSRS Gold", "RS3 Gold", "Sell RS Gold", "OSRS Items", "OSRS Accounts", "Reward Chests"];
