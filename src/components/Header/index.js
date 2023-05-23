@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 import useStyles from "./styles";
-import { currencies } from "../../utils/currencies";
+import { currencies, flagURLs } from "../../utils/currencies";
 
 const pages = ["OSRS Gold", "RS3 Gold", "Sell RS Gold", "OSRS Items", "OSRS Accounts", "Reward Chests"];
 
@@ -123,7 +123,10 @@ const Header = ({ currency, setCurrency }) => {
           <Box className={styles.rightContainer}>
             <Select value={currency} onChange={(e) => setCurrency(e.target.value)} variant="standard">
               {Object.keys(currencies).map((currency) => (
-                <MenuItem value={currency}>{currency}</MenuItem>
+                <MenuItem value={currency}>
+                  <img className={styles.flag} src={flagURLs[currency]} alt={currency} />
+                  {currency}
+                </MenuItem>
               ))}
             </Select>
 
