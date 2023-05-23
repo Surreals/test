@@ -121,17 +121,7 @@ const Header = ({ currency, setCurrency }) => {
             )}
           </Box>
           <Box className={styles.rightContainer}>
-            <Select
-              value={currency}
-              inputProps={{
-                classes: {
-                  icon: styles.icon,
-                  root: styles.root,
-                },
-              }}
-              onChange={(e) => setCurrency(e.target.value)}
-              className={styles.select}
-            >
+            <Select value={currency} onChange={(e) => setCurrency(e.target.value)} variant="standard">
               {Object.keys(currencies).map((currency) => (
                 <MenuItem value={currency}>{currency}</MenuItem>
               ))}

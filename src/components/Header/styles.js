@@ -27,24 +27,6 @@ const useStyles = makeStyles((theme) =>
       display: "flex",
       gap: 12,
     },
-    select: {
-      border: "none",
-      "&:before": {
-        borderColor: "white",
-      },
-      "&:after": {
-        borderColor: "white",
-      },
-      "&:not(.Mui-disabled):hover::before": {
-        borderColor: "white",
-      },
-    },
-    icon: {
-      fill: "white",
-    },
-    root: {
-      color: "white",
-    },
   })
 );
 
