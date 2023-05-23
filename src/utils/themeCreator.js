@@ -47,14 +47,31 @@ export const themeOptions = {
         },
       },
     },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          width: "100%",
+          maxWidth: "100% !important",
+          position: "absolute",
+          left: "0 !important",
+        },
+      },
+    },
+    MuiMenu: {
+      styleOverrides: {
+        list: {
+          paddingLeft: 8,
+          paddingRight: 8,
+        },
+      },
+    },
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          "&.MuiMenuItem-root": { color: "#ffffff", },
+          borderColor: "#ffffff33",
+          "&.MuiMenuItem-root": { color: "#ffffff" },
           // "&.MuiMenuItem-root.Mui-selected": {color: "#E9B10A"},
           "&.MuiMenuItem-root:hover": {
-
-
             backgroundColor: "rgba(255, 255, 255, .1)",
             "&:after": {
               content: "''",
@@ -64,12 +81,12 @@ export const themeOptions = {
               top: 0,
               right: 0,
             },
-            color: '#E9B10A',
-            "&.Mui-focusVisible": { background: 'rgba(255, 255, 255, .1)' }
-          }
-        }
-      }
-    }
+            color: "#E9B10A",
+            "&.Mui-focusVisible": { background: "rgba(255, 255, 255, .1)" },
+          },
+        },
+      },
+    },
   },
 };
 
