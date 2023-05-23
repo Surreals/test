@@ -49,20 +49,23 @@ export const themeOptions = {
     },
     MuiPaper: {
       styleOverrides: {
-        root: {
-          width: "100%",
-          maxWidth: "100% !important",
-          position: "absolute",
-          left: "0 !important",
-        },
+        root: ({ theme }) => ({
+          [theme.breakpoints.down("sm")]: {
+            width: "100%",
+            maxWidth: "100% !important",
+            left: "0 !important",
+          },
+        }),
       },
     },
     MuiMenu: {
       styleOverrides: {
-        list: {
-          paddingLeft: 8,
-          paddingRight: 8,
-        },
+        list: ({ theme }) => ({
+          [theme.breakpoints.down("sm")]: {
+            paddingLeft: 8,
+            paddingRight: 8,
+          },
+        }),
       },
     },
     MuiMenuItem: {
