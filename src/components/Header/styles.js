@@ -1,45 +1,51 @@
-import { makeStyles } from '@material-ui/core';
-import { createStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core";
+import { createStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => {
-  return createStyles({
+const useStyles = makeStyles((theme) =>
+  createStyles({
     navItem: {
-        '&:hover': {
-            color: '#E9B10A',
-          }
+      whiteSpace: "nowrap",
+
+      "&:hover": {
+        color: "#E9B10A",
+      },
     },
-    rs3: {
-        color: '#E9B10A'
-    },
-    rs3Border: {
-        borderBottom: '2px solid #E9B10A',
-        boxSizing: 'border-box'
+    navActive: {
+      position: "relative",
+      whiteSpace: "nowrap",
+
+      "&:after": {
+        content: "''",
+        borderBottom: "2px solid #E9B10A",
+        width: "45%",
+        position: "absolute",
+        bottom: "-6px",
+        left: 0,
+      },
     },
     rightContainer: {
-        display: 'flex',
-        gap: 12,
-        flexDirection: 'row',
-        flexGrow: 0
+      display: "flex",
+      gap: 12,
     },
     select: {
-        border: 'none',
-        '&:before': {
-            borderColor: 'white',
-        },
-        '&:after': {
-            borderColor: 'white',
-        },
-        '&:not(.Mui-disabled):hover::before': {
-            borderColor: 'white',
-        },
+      border: "none",
+      "&:before": {
+        borderColor: "white",
+      },
+      "&:after": {
+        borderColor: "white",
+      },
+      "&:not(.Mui-disabled):hover::before": {
+        borderColor: "white",
+      },
     },
     icon: {
-        fill: 'white',
+      fill: "white",
     },
     root: {
-        color: 'white',
+      color: "white",
     },
-  });
-});
+  })
+);
 
 export default useStyles;

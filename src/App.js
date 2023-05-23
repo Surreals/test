@@ -1,9 +1,9 @@
 import { CssBaseline, TextField, ThemeProvider } from "@mui/material";
 import { theme } from "./utils/themeCreator";
+import { currencies } from "./utils/currencies";
 import { Layout } from "./layout/Layout";
 import { useState } from "react";
 
-const currencies = {'USD': 1, 'GBP': 0.9, 'EUR': 0.95, 'AUD': 1.4, 'CAD': 1.6}
 const itemPrice = 10;
 
 function App() {
