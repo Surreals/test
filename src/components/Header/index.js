@@ -1,22 +1,11 @@
 import {
   AppBar,
-  Box,
-  Button,
   Container,
-  IconButton,
-  Link,
-  Menu,
-  MenuItem,
-  Select,
   Toolbar,
-  Typography,
   useMediaQuery,
 } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
-import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
-import useStyles from "./styles";
-import { currencies, flagURLs } from "../../utils/currencies";
+// import useStyles from "./styles";
 import DesktopHeader from "./DesktopHeader";
 import { theme } from "../../utils/themeCreator";
 import MobileHeader from "./MobileHeader";
@@ -24,7 +13,7 @@ import MobileHeader from "./MobileHeader";
 const pages = ["OSRS Gold", "RS3 Gold", "Sell RS Gold", "OSRS Items", "OSRS Accounts", "Reward Chests"];
 
 const Header = ({ currency, setCurrency }) => {
-  const styles = useStyles();
+  // const styles = useStyles();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const desktop = useMediaQuery(theme.breakpoints.up("md"));

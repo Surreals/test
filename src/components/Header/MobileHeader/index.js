@@ -1,12 +1,12 @@
-import { Box, Button, IconButton, Link, Menu, MenuItem, Typography } from '@mui/material';
+import { Box, Button, IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import React from 'react';
-import useStyles from '../styles';
+// import useStyles from '../styles';
 import { theme } from '../../../utils/themeCreator';
 
 const MobileHeader = ({handleOpenNavMenu, anchorElNav, handleCloseNavMenu, pages, currency, setCurrency}) => {
-    const styles = useStyles()
+    // const styles = useStyles()
 
     return <>
     <Box sx={{ flexGrow: 1, display: 'flex'}}>
