@@ -3,6 +3,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import React from 'react';
 import useStyles from '../styles';
+import { theme } from '../../../utils/themeCreator';
 
 const MobileHeader = ({handleOpenNavMenu, anchorElNav, handleCloseNavMenu, pages, currency, setCurrency}) => {
     const styles = useStyles()
@@ -36,6 +37,15 @@ const MobileHeader = ({handleOpenNavMenu, anchorElNav, handleCloseNavMenu, pages
       sx={{
         display: 'block'
       }}
+      MenuProps={{
+        PaperProps: {
+            sx: {
+                bgcolor: theme.palette.secondary.main,
+                '& .MuiMenuItem-root': {
+                    paddingRight: 4,
+                },
+            },
+        }}}
     >
       {pages.map((page) => (
         <MenuItem key={page} onClick={handleCloseNavMenu}>

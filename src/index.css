@@ -40,3 +40,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.MuiMenu-list {
+  background-color: #142241;
+}
