@@ -34,6 +34,13 @@ const useStyles = makeStyles((theme) =>
         marginRight: 8,
         verticalAlign: 'sub'
       },
+    logInButton: {
+        whiteSpace: 'nowrap',
+        textAlign: 'center',
+    },
+    selectItem: {
+        color: 'black'
+    }
   })
 );
 

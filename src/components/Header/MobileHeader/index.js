@@ -63,7 +63,7 @@ const MobileHeader = ({handleOpenNavMenu, anchorElNav, handleCloseNavMenu, pages
   >
     LOGO
   </Typography>
-  <Button autoCapitalize={false} variant="contained">
+  <Button autoCapitalize='false' variant="contained">
         Log In
     </Button>
 </>

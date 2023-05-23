@@ -27,7 +27,7 @@ const Header = ({ currency, setCurrency }) => {
   const styles = useStyles();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const desktop = useMediaQuery(theme.breakpoints.up("sm"));
+  const desktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

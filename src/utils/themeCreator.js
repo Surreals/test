@@ -47,6 +47,29 @@ export const themeOptions = {
         },
       },
     },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          "&.MuiMenuItem-root": { color: "#ffffff", },
+          // "&.MuiMenuItem-root.Mui-selected": {color: "#E9B10A"},
+          "&.MuiMenuItem-root:hover": {
+
+
+            backgroundColor: "rgba(255, 255, 255, .1)",
+            "&:after": {
+              content: "''",
+              borderRight: "3px solid #E9B10A",
+              height: "100%",
+              position: "absolute",
+              top: 0,
+              right: 0,
+            },
+            color: '#E9B10A',
+            "&.Mui-focusVisible": { background: 'rgba(255, 255, 255, .1)' }
+          }
+        }
+      }
+    }
   },
 };
 
